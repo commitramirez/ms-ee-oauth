@@ -1,0 +1,117 @@
+spring:
+  profiles: default
+  datasource:
+    url: ${CADENA_CONEXION_DB_SARP}
+    username: ${USER_DB_SARP}
+    password: ${PASSWORD_DB_SARP}
+    driverClassName: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  
+server:
+  servlet:
+    contextPath: /mssarp-oauth/v1  
+  port: 8080
+  
+sarp:
+  funcionalidad: ${URL_SARP_FUNCIONALIDAD}
+
+jasypt:
+  encryptor:
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    algorithm: PBEWithMD5AndDES
+    password: d4cv4s4-X
+    
+ldap:
+  url: ${URL_LDAP}
+  base: ${BASE_LDAP}
+  prefixUserName: ${PREFIX_USERNAME_LDAP} 
+  urlGC: ${URL_GLOBALCATALOG}
+  baseGC: ${BASE_GLOBALCATALOG}
+  userNameGC: ${USERNAME_GLOBALCATALOG}
+  passwordGC: ${PASSWORD_GLOBALCATALOG}  
+
+authorization:
+  nameApp: ${NAME_APP_OAUTH}
+  passwordApp: ${PASSWORD_APP_OAUTH}
+  signingKey: ${SIGNING_KEY_OAUTH}
+
+info:
+  component: Microservicio para la funcionalidad del oauth2
+
+logging:
+  file:
+    name: logs/msSarp-oauth.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework: INFO
+    mx.gob.imss.cit.BITACORA: ${LOG_LEVEL_SARP}
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:mariadb://10.100.8.42:3306/SARBDD?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: SARBD_USER
+    password: $4R8D_U$3R
+    driverClassName: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+ldap:
+  url: ldap://172.16.0.31:389
+  base: 
+  prefixUserName: METRO\
+  urlGC: ldap://172.16.0.32:3268
+  baseGC: OU=imsswsusnc01,OU=Nivel Central,OU=Nivel Central Usuarios,DC=metro,DC=imss,DC=gob,DC=mx
+  userNameGC: prueba.bitacorasai1
+  passwordGC: 31t4cor4S4i*01  
+
+authorization:
+  nameApp: imssApp
+  passwordApp: 12345678
+  signingKey: algun_codigo_secreto_qwerty_pa_validar_token
+
+  
+server:
+  servlet:
+    contextPath: /mssarp-oauth/v1  
+  port: 9100
+
+sarp:
+  funcionalidad: http://localhost:9095/mssarp-funcionalidad/v1/matriz/{correoUsuario}/{idSistema}
+
+info:
+  component: Microservicio para la funcionalidad del oauth2
+
+logging:
+  file:
+    name: logs/msSarp-oauth.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework: INFO
+    mx.gob.imss.cit.BITACORA: DEBUG
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
