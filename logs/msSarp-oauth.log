@@ -1,0 +1,453 @@
+2021-04-19 18:09:43,492 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:09:44,626 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:09:44,718 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 1 JPA repository interfaces.
+2021-04-19 18:09:45,026 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:09:45,669 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:09:45,682 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:09:45,682 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:09:45,822 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:09:45,822 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2301 ms
+2021-04-19 18:09:46,188 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:09:46,364 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:09:46,427 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:09:46,501 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:09:46,504 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:09:46,751 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:09:46,771 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:09:46,777 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:09:46,952 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:09:47,338 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fff28b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@68742f5, org.springframework.security.web.header.HeaderWriterFilter@720e07be, org.springframework.web.filter.CorsFilter@76b3fc5a, org.springframework.security.web.authentication.logout.LogoutFilter@13947539, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@330dd166, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b125a42, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4464739e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57711448, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73e65f12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@743c1b0b, org.springframework.security.web.session.SessionManagementFilter@70ade334, org.springframework.security.web.access.ExceptionTranslationFilter@7d261106]
+2021-04-19 18:09:47,362 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@645075b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@3bf7d97e, org.springframework.security.web.header.HeaderWriterFilter@4b1f58ac, org.springframework.security.web.authentication.logout.LogoutFilter@7ac8ae4e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@fa313cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa0720b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bcb85cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71a42b64, org.springframework.security.web.session.SessionManagementFilter@3757ab95, org.springframework.security.web.access.ExceptionTranslationFilter@1ad172f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77345edb]
+2021-04-19 18:09:47,366 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d90bc33, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e6d6e24, org.springframework.security.web.header.HeaderWriterFilter@7c9eb322, org.springframework.web.filter.CorsFilter@76b3fc5a, org.springframework.security.web.authentication.logout.LogoutFilter@10eed92d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4230c14c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1bfa82a3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2dee9044, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25b1764d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cbfd67a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b2f0365, org.springframework.security.web.session.SessionManagementFilter@59adcbed, org.springframework.security.web.access.ExceptionTranslationFilter@7603a692]
+2021-04-19 18:09:47,492 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:09:47,521 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:09:47,831 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:09:48,472 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:09:48,484 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:09:48,606 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2021-04-19 18:09:51,060 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:09:51,092 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:09:51,092 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:09:51,104 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:09:51,113 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:09:51,149 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 56 ms
+2021-04-19 18:09:51,277 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9100 (http) with context path '/mssarp-oauth/v1'
+2021-04-19 18:09:53,972 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:09:53,981 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-04-19 18:09:54,376 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-04-19 18:09:54,379 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : Started SpringbootServicioOauthApplication in 16.695 seconds (JVM running for 18.507)
+2021-04-19 18:10:51,218 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-19 18:10:52,304 INFO  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:10:52,309 INFO  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:10:52,317 WARN  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.loader.WebappClassLoaderBase : The web application [mssarp-oauth#v1] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2021-04-19 18:10:52,330 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:10:52,333 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:10:52,337 INFO  [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:10:52,382 INFO  [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-04-19 18:10:52,450 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:10:54,640 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:10:54,773 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:10:54,814 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157ms. Found 1 JPA repository interfaces.
+2021-04-19 18:10:55,080 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:10:55,500 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:10:55,726 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:10:57,347 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:10:57,372 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:10:57,373 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:10:57,572 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:10:57,905 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 311ms. Found 1 JPA repository interfaces.
+2021-04-19 18:10:57,983 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:10:57,984 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5490 ms
+2021-04-19 18:10:58,181 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:10:58,428 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226ms. Found 1 JPA repository interfaces.
+2021-04-19 18:10:58,483 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:10:58,679 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:10:58,718 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216ms. Found 1 JPA repository interfaces.
+2021-04-19 18:10:58,771 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:10:59,176 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:10:59,318 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:10:59,368 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:10:59,615 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:10:59,686 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:10:59,705 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:11:00,403 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:11:00,656 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:11:00,714 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:11:00,715 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:11:01,237 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:11:01,272 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:11:01,273 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:11:01,403 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:11:01,404 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6594 ms
+2021-04-19 18:11:01,726 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:11:01,771 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:11:01,772 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6630 ms
+2021-04-19 18:11:01,783 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:11:01,784 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:11:02,477 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:11:02,593 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:11:02,594 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7042 ms
+2021-04-19 18:11:02,760 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:11:02,978 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:03,219 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:11:03,238 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:03,393 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:11:03,416 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:11:03,531 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:11:03,536 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:11:03,699 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:11:03,858 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:11:04,156 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:04,234 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:11:04,319 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:11:04,400 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:11:04,504 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:11:04,535 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:11:04,575 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:11:04,593 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:11:04,677 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:11:04,694 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:11:04,722 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:11:04,933 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:11:05,331 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:11:05,373 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:11:05,430 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:11:05,766 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:11:05,826 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:11:05,948 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26346e2c, org.springframework.security.web.context.SecurityContextPersistenceFilter@63f4d4c1, org.springframework.security.web.header.HeaderWriterFilter@4cbf19a2, org.springframework.web.filter.CorsFilter@53dcde57, org.springframework.security.web.authentication.logout.LogoutFilter@4262aa42, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24b7fa72, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c53ce77, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@534ff4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34902659, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f0b398c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@423a45f, org.springframework.security.web.session.SessionManagementFilter@16803adb, org.springframework.security.web.access.ExceptionTranslationFilter@674f6d47]
+2021-04-19 18:11:06,023 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43367d5e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a664300, org.springframework.security.web.header.HeaderWriterFilter@182d43c0, org.springframework.security.web.authentication.logout.LogoutFilter@45e08ab7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30dd0110, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ae62e7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48a759a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d7c632f, org.springframework.security.web.session.SessionManagementFilter@2bed2243, org.springframework.security.web.access.ExceptionTranslationFilter@495536b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d43a4a7]
+2021-04-19 18:11:06,027 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58defbe3, org.springframework.security.web.context.SecurityContextPersistenceFilter@71899f00, org.springframework.security.web.header.HeaderWriterFilter@46415e1, org.springframework.web.filter.CorsFilter@53dcde57, org.springframework.security.web.authentication.logout.LogoutFilter@2bc097a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a533e1c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5d87fd08, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60eccaef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ada335c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3eb5e6fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f3e24cc, org.springframework.security.web.session.SessionManagementFilter@37ba9d78, org.springframework.security.web.access.ExceptionTranslationFilter@322b3267]
+2021-04-19 18:11:06,614 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:11:07,125 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:11:07,182 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:11:07,342 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:11:07,943 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:11:07,947 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:11:07,996 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:11:07,999 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:11:08,850 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:11:08,875 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:09,120 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2021-04-19 18:11:09,812 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60a7444, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c3e193c, org.springframework.security.web.header.HeaderWriterFilter@66dca253, org.springframework.web.filter.CorsFilter@572deae7, org.springframework.security.web.authentication.logout.LogoutFilter@43ee4134, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@176b0ff3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d5a04bd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@765ba5ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f680f7e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48b3e46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@371d6188, org.springframework.security.web.session.SessionManagementFilter@51f8899f, org.springframework.security.web.access.ExceptionTranslationFilter@2935f5f8]
+2021-04-19 18:11:09,874 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@507b27eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4293f466, org.springframework.security.web.header.HeaderWriterFilter@2af049b0, org.springframework.security.web.authentication.logout.LogoutFilter@5a0f7142, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@66e718b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e3d8553, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56a8feed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d03d128, org.springframework.security.web.session.SessionManagementFilter@6b43e1fb, org.springframework.security.web.access.ExceptionTranslationFilter@68ca9b1c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@333a3b01]
+2021-04-19 18:11:09,882 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66012043, org.springframework.security.web.context.SecurityContextPersistenceFilter@91379c2, org.springframework.security.web.header.HeaderWriterFilter@2acfbd32, org.springframework.web.filter.CorsFilter@572deae7, org.springframework.security.web.authentication.logout.LogoutFilter@5a1968e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6eb58830, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23f5793c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19348eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79725745, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e034374, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10dc4e75, org.springframework.security.web.session.SessionManagementFilter@60ddb4dc, org.springframework.security.web.access.ExceptionTranslationFilter@7ba1661b]
+2021-04-19 18:11:09,974 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:11:10,603 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:11:10,624 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c0fc0a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1202d4ba, org.springframework.security.web.header.HeaderWriterFilter@7121acb7, org.springframework.web.filter.CorsFilter@6c867b1c, org.springframework.security.web.authentication.logout.LogoutFilter@740bdb56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@169139d9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d183753, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77810b8f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1558cdd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67fae5a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52e9d875, org.springframework.security.web.session.SessionManagementFilter@3687f74f, org.springframework.security.web.access.ExceptionTranslationFilter@70f89f5c]
+2021-04-19 18:11:10,665 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:11:10,680 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73cc662a, org.springframework.security.web.context.SecurityContextPersistenceFilter@31536e82, org.springframework.security.web.header.HeaderWriterFilter@57d14796, org.springframework.security.web.authentication.logout.LogoutFilter@3d77337a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a0d4b7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d63deba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60d3c377, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@598f2f1c, org.springframework.security.web.session.SessionManagementFilter@231f459d, org.springframework.security.web.access.ExceptionTranslationFilter@6e6c5a08, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24dca29]
+2021-04-19 18:11:10,683 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e40c782, org.springframework.security.web.context.SecurityContextPersistenceFilter@1862114f, org.springframework.security.web.header.HeaderWriterFilter@54a4ad4d, org.springframework.web.filter.CorsFilter@6c867b1c, org.springframework.security.web.authentication.logout.LogoutFilter@565ec4cb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b71604, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f5e53d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9d6af93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4812407c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@392d42f6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@298e5afe, org.springframework.security.web.session.SessionManagementFilter@79888dbb, org.springframework.security.web.access.ExceptionTranslationFilter@60f60add]
+2021-04-19 18:11:10,996 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:11:11,786 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:11:13,352 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:13,368 INFO  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:11:13,368 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:11:13,386 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:11:13,421 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:11:13,492 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 124 ms
+2021-04-19 18:11:13,642 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46f7db47, org.springframework.security.web.context.SecurityContextPersistenceFilter@262c7ceb, org.springframework.security.web.header.HeaderWriterFilter@1017e373, org.springframework.web.filter.CorsFilter@3232cc14, org.springframework.security.web.authentication.logout.LogoutFilter@340767f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ff4a884, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@50e59a7a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23c0e316, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fa26836, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5715d16b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63fa7823, org.springframework.security.web.session.SessionManagementFilter@6cfee625, org.springframework.security.web.access.ExceptionTranslationFilter@2e5e499c]
+2021-04-19 18:11:13,668 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:11:13,718 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:13,754 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f59a2ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@49fe9d, org.springframework.security.web.header.HeaderWriterFilter@576cbf3f, org.springframework.security.web.authentication.logout.LogoutFilter@3954a475, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@71d7619, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15aa2864, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@270de8a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7043040d, org.springframework.security.web.session.SessionManagementFilter@1f5c142a, org.springframework.security.web.access.ExceptionTranslationFilter@34742050, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2055814a]
+2021-04-19 18:11:13,758 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@540e62bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@473d867e, org.springframework.security.web.header.HeaderWriterFilter@4b0cd604, org.springframework.web.filter.CorsFilter@3232cc14, org.springframework.security.web.authentication.logout.LogoutFilter@579666d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@115c059, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@dab0cac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@17db3c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a4b23ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@575a6655, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ff9e78a, org.springframework.security.web.session.SessionManagementFilter@763593c9, org.springframework.security.web.access.ExceptionTranslationFilter@463f6e91]
+2021-04-19 18:11:13,893 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 9100 (http) with context path '/mssarp-oauth/v1'
+2021-04-19 18:11:14,034 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2021-04-19 18:11:14,144 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:11:14,271 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:14,652 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:11:14,682 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:14,988 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2021-04-19 18:11:15,214 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:11:16,497 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2021-04-19 18:11:18,771 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:18,774 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-04-19 18:11:18,882 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:18,904 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:11:18,905 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:11:18,924 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:11:18,954 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:11:19,025 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 119 ms
+2021-04-19 18:11:19,316 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9100 is already in use
+2021-04-19 18:11:19,323 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:19,326 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:19,332 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:11:19,383 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-04-19 18:11:19,387 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:11:19,389 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:11:19,403 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-19 18:11:19,411 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9100 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9100 or configure this application to listen on another port.
+
+2021-04-19 18:11:19,530 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:19,548 INFO  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:11:19,549 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:11:19,564 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:11:19,584 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:11:19,649 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 100 ms
+2021-04-19 18:11:19,922 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9100 is already in use
+2021-04-19 18:11:19,929 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:19,932 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:19,939 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:11:19,990 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-04-19 18:11:19,995 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:11:19,997 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:11:20,009 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-19 18:11:20,017 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9100 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9100 or configure this application to listen on another port.
+
+2021-04-19 18:11:20,050 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-04-19 18:11:20,060 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : Started SpringbootServicioOauthApplication in 37.697 seconds (JVM running for 41.946)
+2021-04-19 18:11:20,471 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:20,490 INFO  [RMI TCP Connection(4)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:11:20,491 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:11:20,506 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:11:20,523 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:11:20,576 INFO  [RMI TCP Connection(4)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 85 ms
+2021-04-19 18:11:20,807 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9100 is already in use
+2021-04-19 18:11:20,814 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:20,817 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:20,823 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:11:20,872 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-04-19 18:11:20,876 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:11:20,879 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:11:20,889 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-19 18:11:20,897 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9100 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9100 or configure this application to listen on another port.
+
+2021-04-19 18:11:20,973 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.SpringbootServicioOauthApplication : The following profiles are active: local
+2021-04-19 18:11:22,547 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-04-19 18:11:22,678 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 1 JPA repository interfaces.
+2021-04-19 18:11:23,172 INFO  [restartedMain] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=19893950-a72a-3c25-bef3-9a38d1c45eac
+2021-04-19 18:11:23,963 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9100 (http)
+2021-04-19 18:11:23,983 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-04-19 18:11:23,984 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-04-19 18:11:24,312 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring embedded WebApplicationContext
+2021-04-19 18:11:24,313 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3305 ms
+2021-04-19 18:11:24,654 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-19 18:11:24,873 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:24,975 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-19 18:11:25,122 INFO  [task-1] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-04-19 18:11:25,142 INFO  [restartedMain] mx.gob.imss.cit.sarp.oauth.filter.CustomFilter : ########## Initiating Custom filter ##########
+2021-04-19 18:11:25,559 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Configured with RSA signing key
+2021-04-19 18:11:25,592 INFO  [restartedMain] org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter : Signing and verification RSA keys match
+2021-04-19 18:11:25,595 INFO  [task-1] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-19 18:11:25,848 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-04-19 18:11:26,262 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1809e600, org.springframework.security.web.context.SecurityContextPersistenceFilter@e64b9a7, org.springframework.security.web.header.HeaderWriterFilter@322433fc, org.springframework.web.filter.CorsFilter@ea9f24d, org.springframework.security.web.authentication.logout.LogoutFilter@cf90f41, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b04d404, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5d3ba93, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@23481a78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1beaf527, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6acee59c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2812d684, org.springframework.security.web.session.SessionManagementFilter@6e918740, org.springframework.security.web.access.ExceptionTranslationFilter@5bdb89c8]
+2021-04-19 18:11:26,293 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dd105ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@767f6307, org.springframework.security.web.header.HeaderWriterFilter@6395178, org.springframework.security.web.authentication.logout.LogoutFilter@6fa66db4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f31bd1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10b1cf51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c4ffeae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@371084f1, org.springframework.security.web.session.SessionManagementFilter@61ecb59e, org.springframework.security.web.access.ExceptionTranslationFilter@26b81213, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40f198c6]
+2021-04-19 18:11:26,298 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/**', OPTIONS]]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c63a852, org.springframework.security.web.context.SecurityContextPersistenceFilter@599daa56, org.springframework.security.web.header.HeaderWriterFilter@693bef4f, org.springframework.web.filter.CorsFilter@ea9f24d, org.springframework.security.web.authentication.logout.LogoutFilter@708d589, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e9bff91, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@24c1ada, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@54225d36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@651a8292, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53ed58e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15477ea6, org.springframework.security.web.session.SessionManagementFilter@49b31866, org.springframework.security.web.access.ExceptionTranslationFilter@5bbcf0ff]
+2021-04-19 18:11:26,809 INFO  [restartedMain] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-write operations
+2021-04-19 18:11:27,414 INFO  [task-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-04-19 18:11:27,470 INFO  [task-1] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-04-19 18:11:28,843 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-19 18:11:28,857 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:28,885 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 18:11:28,885 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-04-19 18:11:28,931 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-04-19 18:11:28,976 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 90 ms
+2021-04-19 18:11:29,012 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : Unable to start LiveReload server
+2021-04-19 18:11:31,465 INFO  [restartedMain] org.springframework.cloud.commons.util.InetUtils : Cannot determine local hostname
+2021-04-19 18:11:31,485 WARN  [restartedMain] org.springframework.cloud.security.oauth2.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2021-04-19 18:11:31,656 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9100 is already in use
+2021-04-19 18:11:31,674 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:11:31,676 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:11:31,681 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:11:31,726 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
+2021-04-19 18:11:31,730 INFO  [restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:11:31,732 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:11:31,741 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-19 18:11:31,748 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9100 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9100 or configure this application to listen on another port.
+
+2021-04-19 18:13:28,155 ERROR [http-nio-9100-exec-3] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/mssarp-oauth/v1] threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_271]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_271]
+	at mx.gob.imss.cit.sarp.oauth.filter.CustomFilter.doFilter(CustomFilter.java:33) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+2021-04-19 18:13:53,519 ERROR [http-nio-9100-exec-6] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/mssarp-oauth/v1] threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_271]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_271]
+	at mx.gob.imss.cit.sarp.oauth.filter.CustomFilter.doFilter(CustomFilter.java:33) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+2021-04-19 18:14:13,636 ERROR [http-nio-9100-exec-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/mssarp-oauth/v1] threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_271]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_271]
+	at mx.gob.imss.cit.sarp.oauth.filter.CustomFilter.doFilter(CustomFilter.java:33) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+2021-04-19 18:15:30,570 ERROR [http-nio-9100-exec-9] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/mssarp-oauth/v1] threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_271]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_271]
+	at mx.gob.imss.cit.sarp.oauth.filter.CustomFilter.doFilter(CustomFilter.java:33) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+2021-04-19 18:16:21,884 ERROR [http-nio-9100-exec-10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [/mssarp-oauth/v1] threw exception
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[na:1.8.0_271]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[na:1.8.0_271]
+	at mx.gob.imss.cit.sarp.oauth.filter.CustomFilter.doFilter(CustomFilter.java:33) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_271]
+2021-04-19 18:37:43,254 INFO  [RMI TCP Connection(40)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-04-19 18:37:43,908 INFO  [RMI TCP Connection(40)-127.0.0.1] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2021-04-19 18:37:43,913 INFO  [RMI TCP Connection(40)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/mssarp-oauth/v1] : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-04-19 18:37:43,922 WARN  [RMI TCP Connection(40)-127.0.0.1] org.apache.catalina.loader.WebappClassLoaderBase : The web application [mssarp-oauth#v1] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2021-04-19 18:37:43,943 INFO  [RMI TCP Connection(40)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-19 18:37:43,947 INFO  [RMI TCP Connection(40)-127.0.0.1] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 18:37:43,951 INFO  [RMI TCP Connection(40)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated...
+2021-04-19 18:37:43,998 INFO  [RMI TCP Connection(40)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed.
